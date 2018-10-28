@@ -37,3 +37,19 @@ _Quiz_:
 1. HTML Templates, die vom Server nicht gecached werden sollen? themes/Frontend/Bare/widgets
 2. Welche Datei muss mindestens in einem Shopware Theme vorhanden sein?
 Theme.php
+
+## Theme Manager
+- do not copy and modify existing themes, create own Theme
+- create own theme: Theme Manager -> Create theme:
+    - Extension of Responsive
+- Inheritance in Theme: Bare -> Responsive -> Custom Theme
+- Derivation from Responsive or from Bare
+- changes in Responsive, Bare themes are prohibited
+- `{extends file='parent:frontend/index/index.tpl'}`: extends the file in the custom theme
+- __Blocks__:
+       `{block name="frontend_index_logo"}
+            <div class="logo">
+                <h1>{$sShopname}</h1>
+            </div>
+        {/block}`
+- it will appeares at the place where the block is defined in Bare Theme
