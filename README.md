@@ -47,9 +47,30 @@ Theme.php
 - changes in Responsive, Bare themes are prohibited
 - `{extends file='parent:frontend/index/index.tpl'}`: extends the file in the custom theme
 - __Blocks__:
-       `{block name="frontend_index_logo"}
+       ```html
+       {block name="frontend_index_logo"}
             <div class="logo">
                 <h1>{$sShopname}</h1>
             </div>
-        {/block}`
-- it will appeares at the place where the block is defined in Bare Theme
+        {/block}
+        ```
+- it will appeare at the place where the block is defined in Bare Theme
+
+## LESS
+- mobile first, no Bootstrap etc.
+
+```less
+@phoneLandscapeViewportWidth: 30em;     // 480px
+@tabletViewportWidth: 48em;             // 768px
+@tabletLandscapeViewportWidth: 64em;    // 1024px
+@desktopViewportWidth: 78.75em;         // 1260px
+```
+
+- `.unitize()` mixin: translation of px into rem
+- parent/child-Relationship: --
+- modifier: `&.is--small`
+- nesting till __three__ layers
+- native UI Components von Shopware: https://developers.shopware.com/styletile/
+- Guidelines: https://developers.shopware.com/blog/2016/08/26/css-coding-guidelines/
+
+- images are included in srcset
