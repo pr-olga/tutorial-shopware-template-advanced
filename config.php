@@ -5,5 +5,23 @@
     'username' => 'bn_shopware',
     'password' => '195c470cf5',
     'dbname' => 'bitnami_shopware',
+  ],
+
+  'front' => [
+    'throwExceptions' => true,
+    'showException' => true
+  ],
+
+  'phpsettings' => [
+      'display_errors' => 1
+  ],
+
+  'template' => [
+      'forceCompile' => true
+  ],
+
+  'httpcache' => [
+      'debug' => true
   ]
+
 ];
