@@ -74,3 +74,14 @@ Theme.php
 - Guidelines: https://developers.shopware.com/blog/2016/08/26/css-coding-guidelines/
 
 - images are included in srcset
+
+## Smarty
+- available variables: `{debug}`
+- smarty modifiers: `{$sCategories | print_r}`
+- smarty can have loops, conditionals `{foreach $sCategories as $sCategory}`
+- `append / prepend` cause problem with Plugins
+
+- shyim profiler: https://github.com/FriendsOfShopware/FroshProfiler
+- shyim profiler must be used in developemnt versions only
+
+- if you modify existing blocks or create your own blocks, you can inherit existing elements from parent `{$smarty.block.parent}`
