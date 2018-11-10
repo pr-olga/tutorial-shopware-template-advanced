@@ -85,3 +85,8 @@ Theme.php
 - shyim profiler must be used in developemnt versions only
 
 - if you modify existing blocks or create your own blocks, you can inherit existing elements from parent `{$smarty.block.parent}`
+
+### Listing
+- add custom template in backend: i.e. `custom_listing.tpl:My Custom Listing;`
+- this template can be assigned to a certain categorie
+- depending on an value of `{$productBoxLayout = "value"}`, it creates a class `box-value`
