@@ -10,11 +10,10 @@
             {$sArticle.price|currency}
             </span>
         </div>
-        </a>
-    </div>
-
     <div class="box-custom--image">
         {include file="parent:frontend/listing/product-box/product-image.tpl"}
     </div>
+        </a>
+    </div>
 
-    {/block}
+   {/block}
